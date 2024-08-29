@@ -15,9 +15,13 @@ class AlbumPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       // Top App Bar
       appBar: AppBar(
-        title: const Text('What Beatles album should I listen to?'),
+        title: const Text('What Beatles album should I listen to?',
+        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.grey[850],
       ),
       // The body of the app
       body: AlbumChange(),
