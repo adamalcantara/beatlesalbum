@@ -38,7 +38,12 @@ class _AlbumChangeState extends State<AlbumChange> {
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: Center(
-        child: Image.asset('images/$albumNumber.jpg')
+        child: TextButton(
+            onPressed: () {
+              print('Clicked');
+            },
+            child: Image.asset('images/$albumNumber.jpg'),
+        ),
       ),
     );
   }
